@@ -4,22 +4,18 @@
 
 
 int main() {
-	srand(time(0));
 
-	for (int i = 0; i < 10; i++) {
-		InputLayer inputL;
-		inputL.numberOfNeuronInLayer = 5;
-		inputL = inputL.initLayer(inputL);
-		inputL.printLayer(inputL);
+    srand(time(0)); // Инициализация генератора случайных чисел
 
-		OutputLayer outputL;
-		outputL.numberOfNeuronInLayer = 1;
-		outputL = outputL.initLayer(outputL);
-		outputL.printLayer(outputL);
-	}
+    InputLayer inputL; // Создание объекта InputLayer
+    inputL.numberOfNeuronInLayer = 5; // Установка количества нейронов во входном слое
+    inputL = inputL.initLayer(inputL); // Инициализация входного слоя
+    inputL.printLayer(inputL); // Вывод информации о входном слое
 
-	getchar();
+    OutputLayer outputL; // Создание объекта OutputLayer
+    outputL.numberOfNeuronInLayer = 1; // Установка количества нейронов в выходном слое
+    outputL = outputL.initLayer(outputL); // Инициализация выходного слоя
+    outputL.printLayer(outputL); // Вывод информации о выходном слое
 
-
-	return 0;
+    return 0;
 }
