@@ -130,8 +130,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InputLayer.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Neuron.h" />
+    <ClInclude Include="OutputLayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

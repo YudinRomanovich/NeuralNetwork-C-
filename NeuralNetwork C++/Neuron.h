@@ -13,8 +13,6 @@ public:
 		return ((double)rand()) / RAND_MAX;
 	}
 
-protected:
-
 	std::vector<double>listOfWeightIn;
 	std::vector<double>listOfWeightOut;
 	double outputValue;
